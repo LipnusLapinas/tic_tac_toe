@@ -77,4 +77,9 @@ until(game.game_over?)
   game.player_turn(space)
   game.game_state
 end
-puts "Player #{game.player} wins!"
+if(game.player == 1)
+  player = 2
+else
+  player = 1
+end
+puts "Player #{player} wins!"
